@@ -162,7 +162,7 @@ const swaggerOptions = {
       },
     ],
   },
-  apis: [ "./Routes/admin.route.js", "./Routes/auth.route.js" ],
+  apis: [ "./routes/admin.route.js", "./routes/auth.route.js" ],
 };
 
 const swaggerSpec = swaggerJSDoc(swaggerOptions);
