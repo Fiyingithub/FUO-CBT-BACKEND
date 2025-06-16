@@ -25,7 +25,7 @@ app.use(
 
 // CORS
 const corsOptions = {
-  origin: ["*", "http://localhost:4000"],
+  origin: ["*", "http://localhost:4000", "https://fuo-cbt-backend.onrender.com"],
   credentials: true,
   optionSuccessStatus: 200,
 };
