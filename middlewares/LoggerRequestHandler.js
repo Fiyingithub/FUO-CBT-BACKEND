@@ -1,4 +1,4 @@
-import logger from "../Utils/Logger.js";
+import logger from "../utils/Logger.js";
 
 const LoggerRequestHandler = (req, res, next) => {
   logger.http(`${req.method} ${req.originalUrl}`);

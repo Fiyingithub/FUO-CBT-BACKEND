@@ -1,5 +1,5 @@
 
-import logger from "../Utils/Logger.js";
+import logger from "../utils/Logger.js";
 
 const LoggerErrorHandler = (err, req, res, next) => {
   logger.error(err.message, { stack: err.stack });
