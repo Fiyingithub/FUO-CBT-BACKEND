@@ -17,7 +17,7 @@ const swaggerOptions = {
         url: "http://localhost:4000",
       },
       {
-        url: "https://capstone-group-3-backend.onrender.com",
+        url: "https://fuo-cbt-backend.onrender.com",
       },
     ],
     schemes: {
