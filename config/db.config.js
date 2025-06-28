@@ -1,5 +1,5 @@
 import { Sequelize } from "sequelize";
-import fs from "fs"
+import fs from "fs";
 import dotenv from "dotenv";
 
 dotenv.config();
@@ -11,8 +11,7 @@ export const sequelize = new Sequelize(
   {
     host: process.env.DB_HOST,
     dialect: process.env.DB_DIALECT,
-    port: Number(process.env.PORT),
-    logging: true,
+    // port: Number(process.env.PORT),
     dialectOptions: {
       ssl: {
         rejectUnauthorized: true,
@@ -20,5 +19,6 @@ export const sequelize = new Sequelize(
         // ca: fs.readFileSync(process.env.SSL_CA_PATH).toString(),
       },
     },
-  },
+    logging: true,
+  }
 );
