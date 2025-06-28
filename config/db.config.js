@@ -16,7 +16,8 @@ export const sequelize = new Sequelize(
     dialectOptions: {
       ssl: {
         rejectUnauthorized: true,
-        ca: fs.readFileSync(process.env.SSL_CA_PATH).toString(),
+        ca: process.env.SSL_CA_PATH
+        // ca: fs.readFileSync(process.env.SSL_CA_PATH).toString(),
       },
     },
   },
