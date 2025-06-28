@@ -3,3 +3,6 @@ logs
 node_modules
 .env.development
 .statusCode
+/certs
+# Sensitive certs
+certs/
